@@ -59,7 +59,9 @@ body {
       display: inline;
       color: #6b4dec; }
     .header__map__img {
-      margin-top: 5px;
+      margin-top: 15px;
+      height: 40px;
+      width: 70px;
       display: block; }
 
 .contents {
@@ -149,7 +151,7 @@ body {
     height: 700px; }
   .places__text {
     margin-bottom: 15px;
-    padding-left: 10px;
+    padding-left: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -168,16 +170,26 @@ body {
     background-image: url("https://stephanie-dommartin.fr/wp-content/uploads/2019/11/Dommartin-coach-coachprofessionnel-accompagnementduchangment-394x512.jpg"); }
   .places__2 {
     height: 100px;
-    background-image: url(""); }
+    background-image: url("https://static.dezeen.com/uploads/2019/05/met-camp-notes-on-fashion-design-exhibit-new-york-city-usa_dezeen_2364_col_2.jpg"); }
   .places__3 {
     height: 150px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     background-image: url("http://inventiba.online/wp-content/uploads/2017/04/142.jpg"); }
+    .places__3__text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline; }
   .places__icon {
     color: white; }
   .places__name {
@@ -221,5 +233,11 @@ body {
     border: none;
     border-radius: 7px;
     cursor: pointer; }
+
+.lyon__card {
+  height: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
 
 /*# sourceMappingURL=style.css.map */

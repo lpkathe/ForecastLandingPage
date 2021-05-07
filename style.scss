@@ -63,7 +63,9 @@ $theme-color: rgb(107, 77, 236);
     }
 
     &__img {
-      margin-top: 5px;
+      margin-top: 15px;
+      height: 40px;
+      width: 70px;
       display: block;
     }
   }
@@ -148,7 +150,7 @@ $theme-color: rgb(107, 77, 236);
 
   &__text {
     margin-bottom: 15px;
-    padding-left: 10px;
+    padding-left: 15px;
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
@@ -165,14 +167,20 @@ $theme-color: rgb(107, 77, 236);
 
   &__2 {
     height: 100px;
-    background-image: url("");
+    background-image: url("https://static.dezeen.com/uploads/2019/05/met-camp-notes-on-fashion-design-exhibit-new-york-city-usa_dezeen_2364_col_2.jpg");
   }
 
   &__3 {
     height: 150px;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     background-image: url("http://inventiba.online/wp-content/uploads/2017/04/142.jpg");
+
+    &__text {
+      display: flex;
+      align-items: baseline;
+    }
   }
 
   &__icon {
@@ -222,5 +230,12 @@ $theme-color: rgb(107, 77, 236);
     border: none;
     border-radius: 7px;
     cursor: pointer;
+  }
+}
+
+.lyon {
+  &__card {
+    height: 100px;
+    width: fit-content;
   }
 }
