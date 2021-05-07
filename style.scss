@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  padding: 10px;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(218, 226, 236);
+}
+
+.logo {
+  &__container {
+    padding: 10px;
+    height: 30px;
+    display: flex;
+    justify-content: end;
+  }
+
+  &__img {
+    height: inherit;
+  }
+}
