@@ -63,17 +63,22 @@ $theme-color: rgb(107, 77, 236);
     }
 
     &__img {
+      margin-top: 5px;
       display: block;
     }
   }
 }
 
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .forecast {
   height: fit-content;
   width: inherit;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 
   &__card {
     height: 100px;
@@ -123,10 +128,99 @@ $theme-color: rgb(107, 77, 236);
 
   &__weather {
     margin-top: 3px;
+    text-align: left;
   }
 }
 
 .humidity__symbol {
   font-size: 12px;
   vertical-align: super;
+}
+
+.places {
+  margin: 15px auto;
+  height: fit-content;
+  width: 250px;
+
+  &__cards {
+    height: 700px;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 34px;
+  }
+
+  &__1 {
+    height: 300px;
+    background-image: url("https://stephanie-dommartin.fr/wp-content/uploads/2019/11/Dommartin-coach-coachprofessionnel-accompagnementduchangment-394x512.jpg");
+  }
+
+  &__2 {
+    height: 100px;
+    background-image: url("");
+  }
+
+  &__3 {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("http://inventiba.online/wp-content/uploads/2017/04/142.jpg");
+  }
+
+  &__icon {
+    color: white;
+  }
+
+  &__name {
+    margin-left: 7px;
+    width: 50px;
+    text-align: justify;
+  }
+
+  &__plus {
+    height: 150px;
+    width: 70px;
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+    background-color: $theme-color;
+    border-radius: 40px;
+    border: none;
+    box-sizing: border-box;
+  }
+}
+
+.reviews {
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__title {
+    font-weight: lighter;
+  }
+
+  &__userPhoto {
+    height: 30px;
+    width: 30px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+
+  &__plus {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(162, 144, 243);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+  }
 }

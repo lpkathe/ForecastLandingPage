@@ -59,13 +59,10 @@ body {
       display: inline;
       color: #6b4dec; }
     .header__map__img {
+      margin-top: 5px;
       display: block; }
 
-.forecast {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: inherit;
+.contents {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +70,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center; }
+
+.forecast {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: inherit; }
   .forecast__card {
     height: 100px;
     width: 300px;
@@ -126,10 +132,94 @@ body {
   font-weight: bolder;
   font-size: 24px; }
 .text__weather {
-  margin-top: 3px; }
+  margin-top: 3px;
+  text-align: left; }
 
 .humidity__symbol {
   font-size: 12px;
   vertical-align: super; }
+
+.places {
+  margin: 15px auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 250px; }
+  .places__cards {
+    height: 700px; }
+  .places__text {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 34px; }
+  .places__1 {
+    height: 300px;
+    background-image: url("https://stephanie-dommartin.fr/wp-content/uploads/2019/11/Dommartin-coach-coachprofessionnel-accompagnementduchangment-394x512.jpg"); }
+  .places__2 {
+    height: 100px;
+    background-image: url(""); }
+  .places__3 {
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-image: url("http://inventiba.online/wp-content/uploads/2017/04/142.jpg"); }
+  .places__icon {
+    color: white; }
+  .places__name {
+    margin-left: 7px;
+    width: 50px;
+    text-align: justify; }
+  .places__plus {
+    height: 150px;
+    width: 70px;
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+    background-color: #6b4dec;
+    border-radius: 40px;
+    border: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+
+.reviews {
+  margin-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .reviews__title {
+    font-weight: lighter; }
+  .reviews__userPhoto {
+    height: 30px;
+    width: 30px;
+    border-radius: 7px;
+    cursor: pointer; }
+  .reviews__plus {
+    height: 30px;
+    width: 30px;
+    background-color: #a290f3;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
