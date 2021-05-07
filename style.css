@@ -6,6 +6,13 @@ body {
   padding: 5px;
   height: 100vh;
   width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #dae2ec; }
 
 .logo__container {
@@ -16,12 +23,14 @@ body {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end; }
+          justify-content: end;
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
 .logo__img {
   height: inherit; }
 
 .container {
-  margin: auto;
+  margin: 0 auto;
   padding: 15px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -51,5 +60,76 @@ body {
       color: #6b4dec; }
     .header__map__img {
       display: block; }
+
+.forecast {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center; }
+  .forecast__card {
+    height: 100px;
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 17px;
+    border: 0.1px solid;
+    border-color: rgba(107, 77, 236, 0.2); }
+
+.card__img {
+  margin: 10px;
+  height: 50px;
+  width: 70px; }
+.card__part1 {
+  margin-left: 5px;
+  display: inherit;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.card__part2 {
+  height: 100px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 20px;
+  background-color: #6b4dec;
+  border-radius: 17px; }
+
+.text__day {
+  margin-bottom: 0;
+  font-weight: bolder;
+  font-size: 24px; }
+.text__weather {
+  margin-top: 3px; }
+
+.humidity__symbol {
+  font-size: 12px;
+  vertical-align: super; }
 
 /*# sourceMappingURL=style.css.map */
