@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 $theme-color: rgb(107, 77, 236);
@@ -8,6 +9,10 @@ $theme-color: rgb(107, 77, 236);
 .aside-card {
   height: 30px;
   width: 30px;
+}
+
+.text__thin {
+  font-weight: 100;
 }
 
 .main {
