@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0; }
 
-.aside-card, .aside__img, .aside__degree {
+.aside-card, .aside__degree {
   height: 30px;
   width: 30px; }
 
@@ -17,8 +17,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #dae2ec;
-  position: relative; }
+  background: #dae2ec; }
 
 .aside {
   top: 58px;
@@ -34,14 +33,40 @@ body {
   z-index: 2;
   text-align: center; }
   .aside__main {
-    border-radius: 8px;
     line-height: 29px;
+    width: 35px;
     color: white;
-    background: #6851ea; }
+    border-radius: 8px;
+    background: #6851ea;
+    border-radius: 0 12px 12px 0; }
+    .aside__main::after {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      bottom: -15px;
+      height: 15px;
+      width: 4px;
+      left: 0;
+      border-top-left-radius: 10px;
+      -webkit-box-shadow: 0 -6px 0 0 #6851ea;
+              box-shadow: 0 -6px 0 0 #6851ea; }
   .aside__img {
+    width: 35px;
+    height: 35px;
     font-size: 5px;
     background: #1d1f79;
-    border-radius: 8px; }
+    border-radius: 0 12px 12px 5px; }
+    .aside__img::after {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      height: 20px;
+      width: 4px;
+      left: 0;
+      top: -20px;
+      border-bottom-left-radius: 10px;
+      -webkit-box-shadow: 0 10px 0 0 #1d1f79;
+              box-shadow: 0 10px 0 0 #1d1f79; }
   .aside__degree__text {
     margin: 0;
     font-size: 12px; }
