@@ -87,6 +87,15 @@
         height: 80px;
         width: 80px;
       }
+
+      &__src {
+        width: 80px;
+        height: 80px;
+      }
+
+      &__description {
+        font-size: 15px;
+      }
     }
 
     &__degree {
@@ -170,7 +179,7 @@
     margin-right: 30px;
   }
 
-  .lyon {
+  .france {
     &__center {
       margin-top: 15px;
     }

@@ -319,7 +319,7 @@ body {
     border-radius: 7px;
     cursor: pointer; }
 
-.lyon__card {
+.france__card {
   height: 110px;
   width: 250px;
   display: -webkit-box;
@@ -329,12 +329,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-.lyon__main {
+.france__main {
   margin-right: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-.lyon__center {
+.france__center {
   height: 70px;
   width: 200px;
   display: -webkit-box;
@@ -347,23 +347,23 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: left; }
-.lyon__img {
+.france__img {
   height: 70px;
   width: 100px;
   text-align: left;
   background: #a9b2c1;
   border-radius: 17px; }
-.lyon__degree {
+.france__degree {
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #6b4dec;
   font-size: 10px; }
-  .lyon__degree__number {
+  .france__degree__number {
     color: black;
     font-size: 32px; }
-.lyon__text {
+.france__text {
   padding-left: 10px;
   height: 33px;
   display: -webkit-box;
@@ -375,13 +375,13 @@ body {
           flex-direction: column;
   font-weight: bolder;
   border-left: 2px solid lightgray; }
-.lyon__city {
+.france__city {
   margin: 0;
   font-size: 17px; }
-.lyon__country {
+.france__country {
   margin-top: 3px;
   font-size: 12px; }
-.lyon__aditionalInfo {
+.france__aditionalInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
