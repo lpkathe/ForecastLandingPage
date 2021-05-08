@@ -19,13 +19,17 @@ function createURL(city) {
     cityName = paris;
   }
 
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`;
+  const url = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&cnt=4`;
   return url;
 }
 
-function bogotaInfo() {
+function onLoad() {
+  getInfo("bogota");
+}
+
+function getInfo(city) {
   let request = new XMLHttpRequest();
-  request.open("GET", url);
+  request.open("GET", createURL(city));
   request.send();
   request.onload = () => {
     console.log(request);
@@ -40,4 +44,5 @@ function bogotaInfo() {
   };
 }
 
-bogotaInfo();
+getInfo();
+window.addEventListener("load", onLoad);
