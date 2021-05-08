@@ -4,7 +4,7 @@ body {
 
 .main {
   padding: 5px;
-  height: 100vh;
+  height: 100%;
   width: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,7 +13,39 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #dae2ec; }
+  background: #dae2ec;
+  position: relative; }
+
+.aside {
+  top: 101px;
+  left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  text-align: center; }
+  .aside__main {
+    border-radius: 8px;
+    line-height: 29px;
+    color: white;
+    background: #6851ea; }
+  .aside__img {
+    height: 30px;
+    width: 30px;
+    font-size: 5px;
+    background: #1d1f79;
+    border-radius: 8px; }
+  .aside__degree {
+    height: 30px;
+    width: 30px; }
+    .aside__degree__text {
+      margin: 0;
+      font-size: 12px; }
 
 .logo__container {
   padding: 10px;
@@ -42,11 +74,11 @@ body {
 .header {
   height: 150px;
   width: inherit;
-  position: relative;
   background-image: url("assets/header-background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 17px; }
+  border-radius: 17px;
+  position: relative; }
   .header__map {
     top: 20px;
     left: 20px;
@@ -83,8 +115,8 @@ body {
   height: fit-content;
   width: inherit; }
   .forecast__card {
-    height: 100px;
-    width: 300px;
+    height: 80px;
+    width: 250px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -105,7 +137,7 @@ body {
 .card__img {
   margin: 10px;
   height: 50px;
-  width: 70px; }
+  width: 50px; }
 .card__part1 {
   margin-left: 5px;
   display: inherit;
@@ -113,8 +145,8 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 .card__part2 {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,7 +157,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   background-color: #6b4dec;
   border-radius: 17px; }
 
@@ -234,7 +266,7 @@ body {
 
 .lyon__card {
   height: 110px;
-  width: 300px;
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,7 +348,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: 300px;
+  width: 230px;
   border: 3px dashed rgba(187, 185, 192, 0.8); }
   .add-location__btn {
     margin-top: 25px;

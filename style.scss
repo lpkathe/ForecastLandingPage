@@ -7,11 +7,47 @@ $theme-color: rgb(107, 77, 236);
 
 .main {
   padding: 5px;
-  height: 100vh;
+  height: 100%;
   width: inherit;
   display: flex;
   flex-direction: column;
   background: rgb(218, 226, 236);
+  position: relative;
+}
+
+.aside {
+  top: 101px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+
+  &__main {
+    border-radius: 8px;
+    line-height: 29px;
+    color: white;
+    background: rgb(104, 81, 234);
+  }
+
+  &__img {
+    height: 30px;
+    width: 30px;
+    font-size: 5px;
+    background: rgb(29, 31, 121);
+    border-radius: 8px;
+  }
+
+  &__degree {
+    height: 30px;
+    width: 30px;
+
+    &__text {
+      margin: 0;
+      font-size: 12px;
+    }
+  }
 }
 
 .logo {
@@ -40,11 +76,11 @@ $theme-color: rgb(107, 77, 236);
 .header {
   height: 150px;
   width: inherit;
-  position: relative;
   background-image: url("assets/header-background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 17px;
+  position: relative;
 
   &__map {
     top: 20px;
@@ -83,8 +119,8 @@ $theme-color: rgb(107, 77, 236);
   width: inherit;
 
   &__card {
-    height: 100px;
-    width: 300px;
+    height: 80px;
+    width: 250px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -99,7 +135,7 @@ $theme-color: rgb(107, 77, 236);
   &__img {
     margin: 10px;
     height: 50px;
-    width: 70px;
+    width: 50px;
   }
 
   &__part1 {
@@ -109,13 +145,13 @@ $theme-color: rgb(107, 77, 236);
   }
 
   &__part2 {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     background-color: $theme-color;
     border-radius: 17px;
   }
@@ -232,7 +268,7 @@ $theme-color: rgb(107, 77, 236);
 .lyon {
   &__card {
     height: 110px;
-    width: 300px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     border-radius: 17px;
@@ -304,7 +340,7 @@ $theme-color: rgb(107, 77, 236);
 .add-location {
   margin: 30px auto;
   height: fit-content;
-  width: 300px;
+  width: 230px;
   border: 3px dashed rgba(187, 185, 192, 0.8);
 
   &__btn {
