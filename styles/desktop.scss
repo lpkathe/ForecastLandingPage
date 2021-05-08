@@ -1,0 +1,66 @@
+@import "style.scss";
+
+@media (min-width: 1024px) {
+  .aside-card-desktop {
+    height: 90px;
+    width: 110px;
+  }
+
+  .logo__img {
+    margin: 25px;
+    height: 60px;
+  }
+
+  .container {
+    margin-top: 80px;
+    padding: 4%;
+  }
+
+  .header {
+    height: 330px;
+
+    &__map {
+      top: 50px;
+      left: 110px;
+
+      &__icon {
+        height: 25px;
+        width: 25px;
+      }
+
+      &__text {
+        font-size: 27px;
+      }
+
+      &__img {
+        margin-top: 33px;
+        height: 100px;
+        width: 165px;
+      }
+    }
+  }
+
+  .aside {
+    top: 123px;
+
+    &__img {
+      @extend .aside-card-desktop;
+    }
+
+    &__degree {
+      @extend .aside-card-desktop;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__text {
+        margin: 0;
+        font-size: 36px;
+      }
+    }
+  }
+
+  .contents {
+    flex-direction: row;
+  }
+}

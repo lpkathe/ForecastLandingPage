@@ -4,7 +4,10 @@ body {
 }
 
 $theme-color: rgb(107, 77, 236);
-
+.aside-card {
+  height: 30px;
+  width: 30px;
+}
 .main {
   padding: 5px;
   height: 100%;
@@ -16,8 +19,8 @@ $theme-color: rgb(107, 77, 236);
 }
 
 .aside {
-  top: 101px;
-  left: 15px;
+  top: 58px;
+  left: 0;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -32,16 +35,14 @@ $theme-color: rgb(107, 77, 236);
   }
 
   &__img {
-    height: 30px;
-    width: 30px;
+    @extend .aside-card;
     font-size: 5px;
     background: rgb(29, 31, 121);
     border-radius: 8px;
   }
 
   &__degree {
-    height: 30px;
-    width: 30px;
+    @extend .aside-card;
 
     &__text {
       margin: 0;
@@ -71,6 +72,7 @@ $theme-color: rgb(107, 77, 236);
   width: 80vw;
   background-color: white;
   border-radius: 17px;
+  position: relative;
 }
 
 .header {
@@ -88,11 +90,6 @@ $theme-color: rgb(107, 77, 236);
     position: absolute;
     color: $theme-color;
 
-    &__icon {
-      font-size: 5px;
-      color: $theme-color;
-    }
-
     &__text {
       display: inline;
       color: $theme-color;
@@ -103,6 +100,11 @@ $theme-color: rgb(107, 77, 236);
       height: 40px;
       width: 70px;
       display: block;
+    }
+
+    &__icon {
+      height: 10px;
+      width: 10px;
     }
   }
 }

@@ -361,4 +361,54 @@ body {
   .add-location__img {
     width: inherit; }
 
-/*# sourceMappingURL=style.css.map */
+@media (min-width: 1024px) {
+  .aside-card-desktop, .aside__img, .aside__degree {
+    height: 90px;
+    width: 110px; }
+
+  .logo__img {
+    margin: 25px;
+    height: 60px; }
+
+  .container {
+    margin-top: 80px;
+    padding: 4%; }
+
+  .header {
+    height: 330px; }
+    .header__map {
+      top: 50px;
+      left: 110px; }
+      .header__map__icon {
+        height: 25px;
+        width: 25px; }
+      .header__map__text {
+        font-size: 27px; }
+      .header__map__img {
+        margin-top: 33px;
+        height: 100px;
+        width: 165px; }
+
+  .aside {
+    top: 123px; }
+    .aside__degree {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .aside__degree__text {
+        margin: 0;
+        font-size: 36px; }
+
+  .contents {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+
+/*# sourceMappingURL=desktop.css.map */
