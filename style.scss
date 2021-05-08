@@ -144,10 +144,6 @@ $theme-color: rgb(107, 77, 236);
   height: fit-content;
   width: 250px;
 
-  &__cards {
-    height: 700px;
-  }
-
   &__text {
     margin-bottom: 15px;
     padding-left: 15px;
@@ -235,7 +231,72 @@ $theme-color: rgb(107, 77, 236);
 
 .lyon {
   &__card {
-    height: 100px;
-    width: fit-content;
+    height: 110px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 17px;
+    box-shadow: 2px 17px 14px rgba(187, 185, 192, 0.8);
+  }
+
+  &__main {
+    margin-right: 25px;
+    display: flex;
+  }
+
+  &__center {
+    height: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  &__img {
+    height: 70px;
+    width: 100px;
+    text-align: left;
+    background: rgb(169, 178, 193);
+    border-radius: 17px;
+  }
+
+  &__degree {
+    margin-right: 10px;
+    display: flex;
+    color: $theme-color;
+    font-size: 10px;
+
+    &__number {
+      color: black;
+      font-size: 32px;
+    }
+  }
+
+  &__text {
+    padding-left: 10px;
+    height: 33px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    border-left: 2px solid lightgray;
+  }
+
+  &__city {
+    margin: 0;
+    font-size: 17px;
+  }
+
+  &__country {
+    margin-top: 3px;
+    font-size: 12px;
+  }
+
+  &__aditionalInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: gray;
+    font-size: 13px;
   }
 }

@@ -147,8 +147,6 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   width: 250px; }
-  .places__cards {
-    height: 700px; }
   .places__text {
     margin-bottom: 15px;
     padding-left: 15px;
@@ -235,9 +233,82 @@ body {
     cursor: pointer; }
 
 .lyon__card {
-  height: 100px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content; }
+  height: 110px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 17px;
+  -webkit-box-shadow: 2px 17px 14px rgba(187, 185, 192, 0.8);
+          box-shadow: 2px 17px 14px rgba(187, 185, 192, 0.8); }
+.lyon__main {
+  margin-right: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+.lyon__center {
+  height: 70px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left; }
+.lyon__img {
+  height: 70px;
+  width: 100px;
+  text-align: left;
+  background: #a9b2c1;
+  border-radius: 17px; }
+.lyon__degree {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #6b4dec;
+  font-size: 10px; }
+  .lyon__degree__number {
+    color: black;
+    font-size: 32px; }
+.lyon__text {
+  padding-left: 10px;
+  height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: bolder;
+  border-left: 2px solid lightgray; }
+.lyon__city {
+  margin: 0;
+  font-size: 17px; }
+.lyon__country {
+  margin-top: 3px;
+  font-size: 12px; }
+.lyon__aditionalInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: gray;
+  font-size: 13px; }
 
 /*# sourceMappingURL=style.css.map */
