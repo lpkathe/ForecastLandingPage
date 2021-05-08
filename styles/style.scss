@@ -203,7 +203,7 @@ $theme-color: rgb(107, 77, 236);
     align-items: center;
   }
 
-  &__part2 {
+  &__measures {
     height: 80px;
     width: 80px;
     display: flex;
@@ -211,9 +211,13 @@ $theme-color: rgb(107, 77, 236);
     justify-content: center;
     color: white;
     font-size: 15px;
-    background-color: $theme-color;
+    background-color: rgb(115, 129, 145);
     border-radius: 17px;
   }
+}
+
+.first__measures__card {
+  background-color: $theme-color;
 }
 
 .text {

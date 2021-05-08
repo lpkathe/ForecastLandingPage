@@ -198,7 +198,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-.card__part2 {
+.card__measures {
   height: 80px;
   width: 80px;
   display: -webkit-box;
@@ -212,8 +212,11 @@ body {
           justify-content: center;
   color: white;
   font-size: 15px;
-  background-color: #6b4dec;
+  background-color: #738191;
   border-radius: 17px; }
+
+.first__measures__card {
+  background-color: #6b4dec; }
 
 .text__day {
   margin-bottom: 0;
