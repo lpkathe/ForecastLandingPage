@@ -79,6 +79,12 @@
         border-bottom-left-radius: 10px;
         box-shadow: 0 10px 0 0 #1d1f79;
       }
+
+      &__weather {
+        margin-top: 15px;
+        height: 80px;
+        width: 80px;
+      }
     }
 
     &__degree {
