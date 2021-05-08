@@ -500,6 +500,8 @@ body {
       .aside__degree__text {
         margin: 0;
         font-size: 36px; }
+        .aside__degree__text__super {
+          font-size: 142%; }
 
   .contents {
     -webkit-box-orient: horizontal;

@@ -23,30 +23,17 @@ const get = (url) => {
 function assignValues(response) {
   console.log(response);
 
-  document.getElementById(
-    "asideDegree"
-  ).innerHTML = `${response[0].current.temp}`;
-  document.getElementById(
-    "asideImg"
-  ).src = `http://openweathermap.org/img/wn/${response[0].current.weather[0].icon}@2x.png`;
-  document.getElementById("asideImgDescription").innerText =
-    response[0].current.weather[0].main;
+  document.getElementById("asideDegree").innerHTML = `${response[0].current.temp}`;
+  document.getElementById("asideImg").src = `http://openweathermap.org/img/wn/${response[0].current.weather[0].icon}@2x.png`;
+  document.getElementById("asideImgDescription").innerText = response[0].current.weather[0].main;
 
   for (index = 0; index < 3; index++) {
     const card1 = document.getElementById(`forecastCard${index + 1}`);
-    card1.querySelector(
-      ".card__img"
-    ).src = `http://openweathermap.org/img/wn/${response[0].daily[index].weather[0].icon}@2x.png`;
-    card1.querySelector(".text__day").innerText = new Date(
-      response[0].daily[index].dt * 1000
-    ).toLocaleString("en-US", { weekday: "long" });
-    card1.querySelector(".text__weather").innerText =
-      response[0].daily[index].weather[0].main;
-    card1.querySelector(".humidity").innerText =
-      response[0].daily[index].humidity;
-    card1.querySelector(".degrees").innerText = `${Math.round(
-      response[0].daily[index].temp.day
-    )}`;
+    card1.querySelector(".card__img").src = `http://openweathermap.org/img/wn/${response[0].daily[index].weather[0].icon}@2x.png`;
+    card1.querySelector(".text__day").innerText = new Date(response[0].daily[index].dt * 1000).toLocaleString("en-US", { weekday: "long" });
+    card1.querySelector(".text__weather").innerText = response[0].daily[index].weather[0].main;
+    card1.querySelector(".humidity").innerText = response[0].daily[index].humidity;
+    card1.querySelector(".degrees").innerText = `${Math.round(response[0].daily[index].temp.day)}`;
   }
 }
 

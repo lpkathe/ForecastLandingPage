@@ -107,6 +107,10 @@
       &__text {
         margin: 0;
         font-size: 36px;
+
+        &__super {
+          font-size: 142%;
+        }
       }
     }
   }
