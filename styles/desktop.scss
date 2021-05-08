@@ -17,6 +17,7 @@
   }
 
   .header {
+    margin-bottom: 20px;
     height: 330px;
 
     &__map {
@@ -43,8 +44,13 @@
   .aside {
     top: 123px;
 
+    &__main {
+      border-radius: 22px;
+    }
+
     &__img {
       @extend .aside-card-desktop;
+      border-radius: 22px;
     }
 
     &__degree {
@@ -62,5 +68,90 @@
 
   .contents {
     flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .text {
+    &__day {
+      font-size: 16px;
+    }
+
+    &__weather {
+      font-size: 12px;
+    }
+  }
+
+  .places {
+    margin-top: 0;
+    width: 450px;
+
+    &__title {
+      display: inline;
+    }
+
+    &__cards {
+      margin-top: 10px;
+      display: flex;
+
+      &__2-3 {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__3 {
+      margin-top: 20px;
+    }
+
+    &__text {
+      width: 200px;
+    }
+  }
+
+  .reviews {
+    margin-left: 95px;
+    display: inline-flex;
+    justify-content: end;
+
+    &__title {
+      display: inline;
+    }
+  }
+
+  .france-weather {
+    margin-top: -150px;
+    height: 130px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    border-radius: 16px;
+    box-shadow: 0px 17px 14px rgba(187, 185, 192, 0.8);
+  }
+
+  .final-column-desktop {
+    margin-right: 30px;
+  }
+
+  .lyon {
+    &__center {
+      margin-top: 15px;
+    }
+
+    &__img {
+      height: 90px;
+    }
+  }
+
+  .add-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__btn {
+      padding: 0;
+      align-self: center;
+    }
   }
 }

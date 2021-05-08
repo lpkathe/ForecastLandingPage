@@ -78,7 +78,7 @@ $theme-color: rgb(107, 77, 236);
 .header {
   height: 150px;
   width: inherit;
-  background-image: url("/assets/header-background.jpeg");
+  background-image: url("../assets/header-background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 17px;
@@ -169,6 +169,7 @@ $theme-color: rgb(107, 77, 236);
   &__weather {
     margin-top: 3px;
     text-align: left;
+    color: gray;
   }
 }
 
@@ -273,8 +274,6 @@ $theme-color: rgb(107, 77, 236);
     width: 250px;
     display: flex;
     flex-direction: column;
-    border-radius: 17px;
-    box-shadow: 2px 17px 14px rgba(187, 185, 192, 0.8);
   }
 
   &__main {
@@ -336,6 +335,7 @@ $theme-color: rgb(107, 77, 236);
     justify-content: space-evenly;
     color: gray;
     font-size: 13px;
+    border-radius: 17px;
   }
 }
 

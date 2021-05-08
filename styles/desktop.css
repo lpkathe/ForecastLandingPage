@@ -74,7 +74,7 @@ body {
 .header {
   height: 150px;
   width: inherit;
-  background-image: url("/assets/header-background.jpeg");
+  background-image: url("../assets/header-background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 17px;
@@ -167,7 +167,8 @@ body {
   font-size: 24px; }
 .text__weather {
   margin-top: 3px;
-  text-align: left; }
+  text-align: left;
+  color: gray; }
 
 .humidity__symbol {
   font-size: 12px;
@@ -273,10 +274,7 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 17px;
-  -webkit-box-shadow: 2px 17px 14px rgba(187, 185, 192, 0.8);
-          box-shadow: 2px 17px 14px rgba(187, 185, 192, 0.8); }
+          flex-direction: column; }
 .lyon__main {
   margin-right: 25px;
   display: -webkit-box;
@@ -341,7 +339,8 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   color: gray;
-  font-size: 13px; }
+  font-size: 13px;
+  border-radius: 17px; }
 
 .add-location {
   margin: 30px auto;
@@ -375,6 +374,7 @@ body {
     padding: 4%; }
 
   .header {
+    margin-bottom: 20px;
     height: 330px; }
     .header__map {
       top: 50px;
@@ -391,6 +391,10 @@ body {
 
   .aside {
     top: 123px; }
+    .aside__main {
+      border-radius: 22px; }
+    .aside__img {
+      border-radius: 22px; }
     .aside__degree {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -409,6 +413,84 @@ body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; } }
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left; }
+
+  .text__day {
+    font-size: 16px; }
+  .text__weather {
+    font-size: 12px; }
+
+  .places {
+    margin-top: 0;
+    width: 450px; }
+    .places__title {
+      display: inline; }
+    .places__cards {
+      margin-top: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .places__cards__2-3 {
+        margin-left: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+    .places__3 {
+      margin-top: 20px; }
+    .places__text {
+      width: 200px; }
+
+  .reviews {
+    margin-left: 95px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end; }
+    .reviews__title {
+      display: inline; }
+
+  .france-weather {
+    margin-top: -150px;
+    height: 130px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    border-radius: 16px;
+    -webkit-box-shadow: 0px 17px 14px rgba(187, 185, 192, 0.8);
+            box-shadow: 0px 17px 14px rgba(187, 185, 192, 0.8); }
+
+  .final-column-desktop {
+    margin-right: 30px; }
+
+  .lyon__center {
+    margin-top: 15px; }
+  .lyon__img {
+    height: 90px; }
+
+  .add-location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .add-location__btn {
+      padding: 0;
+      -ms-flex-item-align: center;
+          align-self: center; } }
 
 /*# sourceMappingURL=desktop.css.map */
