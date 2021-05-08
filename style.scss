@@ -300,3 +300,24 @@ $theme-color: rgb(107, 77, 236);
     font-size: 13px;
   }
 }
+
+.add-location {
+  margin: 30px auto;
+  height: fit-content;
+  width: 300px;
+  border: 3px dashed rgba(187, 185, 192, 0.8);
+
+  &__btn {
+    margin-top: 25px;
+    height: 40px;
+    width: 200px;
+    color: rgb(85, 89, 130);
+    background-color: rgb(235, 234, 250);
+    border-radius: 30px;
+    border: none;
+  }
+
+  &__img {
+    width: inherit;
+  }
+}
