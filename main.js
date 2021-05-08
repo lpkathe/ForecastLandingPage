@@ -29,9 +29,8 @@ function assignValues(response) {
   document.getElementById(
     "asideImg"
   ).src = `http://openweathermap.org/img/wn/${response[0].current.weather[0].icon}@2x.png`;
-  document.getElementById(
-    "asideImgDescription"
-  ).src = `http://openweathermap.org/img/wn/${response[0].current.weather[0].icon}@2x.png`;
+  document.getElementById("asideImgDescription").innerText =
+    response[0].current.weather[0].main;
 
   for (index = 0; index < 3; index++) {
     const card1 = document.getElementById(`forecastCard${index + 1}`);

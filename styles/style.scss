@@ -54,6 +54,8 @@ $theme-color: rgb(107, 77, 236);
   &__img {
     width: 35px;
     height: 35px;
+    display: flex;
+    flex-direction: column;
     font-size: 5px;
     background: rgb(29, 31, 121);
     border-radius: 0 12px 12px 5px;
@@ -76,14 +78,32 @@ $theme-color: rgb(107, 77, 236);
       height: 20px;
       width: 20px;
     }
+
+    &__src {
+      width: 20px;
+      height: 20px;
+      align-self: center;
+    }
+
+    &__description {
+      margin: 0;
+      color: white;
+      line-height: 7px;
+    }
   }
 
   &__degree {
     @extend .aside-card;
+    display: inline;
 
     &__text {
       margin: 0;
       font-size: 12px;
+      display: inherit;
+
+      &__super {
+        font-size: 58%;
+      }
     }
   }
 }
