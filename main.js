@@ -1,6 +1,11 @@
 const cardinalDegrees = [
   {
     "minDeg": 348.75,
+    "maxDeg": 360,
+    "ordinal": "North"
+  },
+  {
+    "minDeg": 0,
     "maxDeg": 11.25,
     "ordinal": "North"
   },

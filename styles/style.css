@@ -191,7 +191,9 @@ body {
             align-items: center;
     border-radius: 17px;
     border: 0.1px solid;
-    border-color: rgba(107, 77, 236, 0.2); }
+    border-color: rgba(107, 77, 236, 0.2);
+    -webkit-box-shadow: 0 12px 12px 1px lightgray;
+            box-shadow: 0 12px 12px 1px lightgray; }
 
 #forecastCard1 {
   margin-top: 30px; }
@@ -259,8 +261,8 @@ body {
     border-radius: 34px; }
   .places__1 {
     height: 300px;
-    -webkit-box-shadow: 0 22px 22px 10px lightgray;
-            box-shadow: 0 22px 22px 10px lightgray;
+    -webkit-box-shadow: 0px 7px 31px rgba(187, 185, 192, 0.8);
+            box-shadow: 0px 7px 31px rgba(187, 185, 192, 0.8);
     background-image: url("https://stephanie-dommartin.fr/wp-content/uploads/2019/11/Dommartin-coach-coachprofessionnel-accompagnementduchangment-394x512.jpg"); }
   .places__2 {
     height: 100px;
@@ -298,7 +300,8 @@ body {
     border-radius: 40px;
     border: none;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+            box-sizing: border-box;
+    cursor: pointer; }
   .places__map-marker {
     height: 15px;
     width: 15px; }
@@ -334,8 +337,8 @@ body {
     height: 13px; }
 
 .france__card {
-  margin-bottom: 50px;
-  height: 110px;
+  margin-bottom: 23px;
+  height: 130px;
   width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,12 +348,18 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 17px;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 22px 1px gray;
+          box-shadow: 0px 5px 22px 1px gray; }
 .france__main {
   margin-right: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  background-color: transparent;
+  border-radius: 17px; }
+.france__container {
+  background-color: transparent; }
 .france__center {
   height: 70px;
   width: 200px;
@@ -368,8 +377,8 @@ body {
   height: 70px;
   width: 100px;
   text-align: left;
-  background: #a9b2c1;
-  border-radius: 17px; }
+  background: #d3e3f1;
+  border-radius: 14px; }
 .france__degree {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -412,12 +421,10 @@ body {
           justify-content: space-evenly;
   color: gray;
   font-size: 13px;
-  border-radius: 17px;
-  -webkit-box-shadow: 0px 26px 31px rgba(187, 185, 192, 0.8);
-          box-shadow: 0px 26px 31px rgba(187, 185, 192, 0.8); }
+  background-color: transparent;
+  border-radius: 17px; }
 .france__wind {
-  border-right: 2px solid gray;
-  border-left: 2px solid gray;
+  border-right: 2px solid lightgray;
   padding: 0 10px 0 10px; }
 
 .add-location {
@@ -435,7 +442,8 @@ body {
     color: #555982;
     background-color: #ebeafa;
     border-radius: 30px;
-    border: none; }
+    border: none;
+    cursor: pointer; }
   .add-location__img {
     width: inherit; }
 

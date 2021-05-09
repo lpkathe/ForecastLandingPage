@@ -193,6 +193,7 @@ $theme-color: rgb(107, 77, 236);
     border-radius: 17px;
     border: 0.1px solid;
     border-color: rgba($theme-color, 0.2);
+    box-shadow: 0 12px 12px 1px lightgray;
   }
 }
 
@@ -263,7 +264,7 @@ $theme-color: rgb(107, 77, 236);
 
   &__1 {
     height: 300px;
-    box-shadow: 0 22px 22px 10px lightgray;
+    box-shadow: 0px 7px 31px rgba(187, 185, 192, 0.8);
     background-image: url("https://stephanie-dommartin.fr/wp-content/uploads/2019/11/Dommartin-coach-coachprofessionnel-accompagnementduchangment-394x512.jpg");
   }
 
@@ -301,6 +302,7 @@ $theme-color: rgb(107, 77, 236);
     border-radius: 40px;
     border: none;
     box-sizing: border-box;
+    cursor: pointer;
   }
 
   &__map-marker {
@@ -344,18 +346,25 @@ $theme-color: rgb(107, 77, 236);
 
 .france {
   &__card {
-    margin-bottom: 50px;
-    height: 110px;
+    margin-bottom: 23px;
+    height: 130px;
     width: 250px;
     display: flex;
     flex-direction: column;
     border-radius: 17px;
     background-color: #fff;
+    box-shadow: 0px 5px 22px 1px gray;
   }
 
   &__main {
     margin-right: 25px;
     display: flex;
+    background-color: transparent;
+    border-radius: 17px;
+  }
+
+  &__container {
+    background-color: transparent;
   }
 
   &__center {
@@ -371,8 +380,8 @@ $theme-color: rgb(107, 77, 236);
     height: 70px;
     width: 100px;
     text-align: left;
-    background: rgb(169, 178, 193);
-    border-radius: 17px;
+    background: rgb(211, 227, 241);
+    border-radius: 14px;
   }
 
   &__degree {
@@ -415,13 +424,12 @@ $theme-color: rgb(107, 77, 236);
     justify-content: space-evenly;
     color: gray;
     font-size: 13px;
+    background-color: transparent;
     border-radius: 17px;
-    box-shadow: 0px 26px 31px rgba(187, 185, 192, 0.8);
   }
 
   &__wind {
-    border-right: 2px solid gray;
-    border-left: 2px solid gray;
+    border-right: 2px solid lightgray;
     padding: 0 10px 0 10px;
   }
 }
@@ -441,6 +449,7 @@ $theme-color: rgb(107, 77, 236);
     background-color: rgb(235, 234, 250);
     border-radius: 30px;
     border: none;
+    cursor: pointer;
   }
 
   &__img {
