@@ -325,10 +325,13 @@ body {
   .reviews__plus {
     height: 30px;
     width: 30px;
-    background-color: #a290f3;
+    background-color: #a294dd;
     border: none;
+    color: white;
     border-radius: 7px;
     cursor: pointer; }
+  .reviews__icon {
+    height: 13px; }
 
 .france__card {
   margin-bottom: 50px;

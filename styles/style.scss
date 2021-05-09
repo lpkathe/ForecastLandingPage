@@ -330,10 +330,15 @@ $theme-color: rgb(107, 77, 236);
   &__plus {
     height: 30px;
     width: 30px;
-    background-color: rgb(162, 144, 243);
+    background-color: rgb(162, 148, 221);
     border: none;
+    color: white;
     border-radius: 7px;
     cursor: pointer;
+  }
+
+  &__icon {
+    height: 13px;
   }
 }
 
