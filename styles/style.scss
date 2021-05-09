@@ -337,10 +337,12 @@ $theme-color: rgb(107, 77, 236);
 
 .france {
   &__card {
+    margin-bottom: 50px;
     height: 110px;
     width: 250px;
     display: flex;
     flex-direction: column;
+    border-radius: 17px;
   }
 
   &__main {

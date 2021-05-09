@@ -328,6 +328,7 @@ body {
     cursor: pointer; }
 
 .france__card {
+  margin-bottom: 50px;
   height: 110px;
   width: 250px;
   display: -webkit-box;
@@ -336,7 +337,8 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  border-radius: 17px; }
 .france__main {
   margin-right: 25px;
   display: -webkit-box;
