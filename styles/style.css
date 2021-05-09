@@ -345,7 +345,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 17px;
-  border: 2px solid white;
   background-color: #fff; }
 .france__main {
   margin-right: 25px;
@@ -416,6 +415,10 @@ body {
   border-radius: 17px;
   -webkit-box-shadow: 0px 26px 31px rgba(187, 185, 192, 0.8);
           box-shadow: 0px 26px 31px rgba(187, 185, 192, 0.8); }
+.france__wind {
+  border-right: 2px solid gray;
+  border-left: 2px solid gray;
+  padding: 0 10px 0 10px; }
 
 .add-location {
   margin: 30px auto;
