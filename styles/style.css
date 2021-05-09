@@ -364,7 +364,6 @@ body {
   background: #a9b2c1;
   border-radius: 17px; }
 .france__degree {
-  margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,6 +372,8 @@ body {
   .france__degree__number {
     color: black;
     font-size: 32px; }
+  .france__degree__super {
+    margin-right: 10px; }
 .france__text {
   padding-left: 10px;
   height: 33px;
@@ -404,7 +405,9 @@ body {
           justify-content: space-evenly;
   color: gray;
   font-size: 13px;
-  border-radius: 17px; }
+  border-radius: 17px;
+  -webkit-box-shadow: 0px 26px 31px rgba(187, 185, 192, 0.8);
+          box-shadow: 0px 26px 31px rgba(187, 185, 192, 0.8); }
 
 .add-location {
   margin: 30px auto;
@@ -412,7 +415,8 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   width: 230px;
-  border: 3px dashed rgba(187, 185, 192, 0.8); }
+  border: 3px dashed rgba(187, 185, 192, 0.8);
+  border-radius: 16px; }
   .add-location__btn {
     margin-top: 25px;
     height: 40px;
