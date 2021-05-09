@@ -184,6 +184,10 @@
   }
 
   .france {
+    &__card {
+      height: 130px;
+    }
+
     &__center {
       margin-top: 15px;
     }
