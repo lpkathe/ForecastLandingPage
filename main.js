@@ -105,12 +105,12 @@ const get = (url) => {
 
 function assignValues(response) {
   document.getElementById("asideDegree").innerHTML = `${response[0].current.temp}`;
-  document.getElementById("asideImg").src = `http://openweathermap.org/img/wn/${response[0].current.weather[0].icon}@2x.png`;
+  document.getElementById("asideImg").src = `https://openweathermap.org/img/wn/${response[0].current.weather[0].icon}@2x.png`;
   document.getElementById("asideImgDescription").innerText = response[0].current.weather[0].main;
 
   for (index = 0; index < 3; index++) {
     const card1 = document.getElementById(`forecastCard${index + 1}`);
-    card1.querySelector(".card__img").src = `http://openweathermap.org/img/wn/${response[0].daily[index].weather[0].icon}@2x.png`;
+    card1.querySelector(".card__img").src = `https://openweathermap.org/img/wn/${response[0].daily[index].weather[0].icon}@2x.png`;
     card1.querySelector(".text__day").innerText = new Date(response[0].daily[index].dt * 1000).toLocaleString("en-US", { weekday: "long" });
     card1.querySelector(".text__weather").innerText = response[0].daily[index].weather[0].main;
     card1.querySelector(".humidity").innerText = response[0].daily[index].humidity;
@@ -118,14 +118,14 @@ function assignValues(response) {
   }
 
   const lyon = document.getElementById("lyon_card");
-  lyon.querySelector(".france__img").src = `http://openweathermap.org/img/wn/${response[1].current.weather[0].icon}@2x.png`;
+  lyon.querySelector(".france__img").src = `https://openweathermap.org/img/wn/${response[1].current.weather[0].icon}@2x.png`;
   lyon.querySelector(".france__degree__number").innerText = `${Math.round(response[1].current.temp)}`;
   lyon.querySelector(".france__humidity").innerText = response[1].current.humidity;
   lyon.querySelector(".france__wind").innerText = getWindDirectionByDegree(response[1].current.wind_deg);
   lyon.querySelector(".france__wind__velocity").innerText = response[1].current.wind_speed;
 
   const paris = document.getElementById(`paris_card`);
-  paris.querySelector(".france__img").src = `http://openweathermap.org/img/wn/${response[2].current.weather[0].icon}@2x.png`;
+  paris.querySelector(".france__img").src = `https://openweathermap.org/img/wn/${response[2].current.weather[0].icon}@2x.png`;
   paris.querySelector(".france__degree__number").innerText = `${Math.round(response[2].current.temp)}`;
   paris.querySelector(".france__humidity").innerText = response[2].current.humidity;
   paris.querySelector(".france__wind").innerText = getWindDirectionByDegree(response[2].current.wind_deg);

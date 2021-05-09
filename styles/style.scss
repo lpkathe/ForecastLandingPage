@@ -219,15 +219,16 @@ $theme-color: rgb(107, 77, 236);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     font-size: 15px;
-    background-color: rgb(115, 129, 145);
+    color: black;
+    background-color: rgb(212, 226, 241);
     border-radius: 17px;
   }
 }
 
 .first__measures__card {
   background-color: $theme-color;
+  color: white;
 }
 
 .text {
@@ -263,6 +264,7 @@ $theme-color: rgb(107, 77, 236);
 
   &__1 {
     height: 300px;
+    box-shadow: 0 22px 22px 10px lightgray;
     background-image: url("https://stephanie-dommartin.fr/wp-content/uploads/2019/11/Dommartin-coach-coachprofessionnel-accompagnementduchangment-394x512.jpg");
   }
 
@@ -315,6 +317,7 @@ $theme-color: rgb(107, 77, 236);
   justify-content: space-between;
 
   &__title {
+    margin-right: 10px;
     font-weight: lighter;
   }
 
@@ -343,6 +346,8 @@ $theme-color: rgb(107, 77, 236);
     display: flex;
     flex-direction: column;
     border-radius: 17px;
+    border: 2px solid white;
+    background-color: #fff;
   }
 
   &__main {

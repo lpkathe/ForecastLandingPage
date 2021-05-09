@@ -218,13 +218,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: white;
   font-size: 15px;
-  background-color: #738191;
+  color: black;
+  background-color: #d4e2f1;
   border-radius: 17px; }
 
 .first__measures__card {
-  background-color: #6b4dec; }
+  background-color: #6b4dec;
+  color: white; }
 
 .text__day {
   margin-bottom: 0;
@@ -259,6 +260,8 @@ body {
     border-radius: 34px; }
   .places__1 {
     height: 300px;
+    -webkit-box-shadow: 0 22px 22px 10px lightgray;
+            box-shadow: 0 22px 22px 10px lightgray;
     background-image: url("https://stephanie-dommartin.fr/wp-content/uploads/2019/11/Dommartin-coach-coachprofessionnel-accompagnementduchangment-394x512.jpg"); }
   .places__2 {
     height: 100px;
@@ -313,6 +316,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .reviews__title {
+    margin-right: 10px;
     font-weight: lighter; }
   .reviews__userPhoto {
     height: 30px;
@@ -338,7 +342,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 17px; }
+  border-radius: 17px;
+  border: 2px solid white;
+  background-color: #fff; }
 .france__main {
   margin-right: 25px;
   display: -webkit-box;
