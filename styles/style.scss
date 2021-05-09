@@ -183,6 +183,7 @@ $theme-color: rgb(107, 77, 236);
   width: inherit;
 
   &__card {
+    margin-bottom: 13px;
     height: 80px;
     width: 250px;
     display: flex;
@@ -193,6 +194,10 @@ $theme-color: rgb(107, 77, 236);
     border: 0.1px solid;
     border-color: rgba($theme-color, 0.2);
   }
+}
+
+#forecastCard1 {
+  margin-top: 30px;
 }
 
 .card {
@@ -229,7 +234,7 @@ $theme-color: rgb(107, 77, 236);
   &__day {
     margin-bottom: 0;
     font-weight: bolder;
-    font-size: 24px;
+    font-size: 19px;
   }
 
   &__weather {
@@ -237,11 +242,6 @@ $theme-color: rgb(107, 77, 236);
     text-align: left;
     color: gray;
   }
-}
-
-.humidity__symbol {
-  font-size: 12px;
-  vertical-align: super;
 }
 
 .places {
@@ -284,10 +284,6 @@ $theme-color: rgb(107, 77, 236);
     }
   }
 
-  &__icon {
-    color: white;
-  }
-
   &__name {
     margin-left: 7px;
     width: 50px;
@@ -304,6 +300,11 @@ $theme-color: rgb(107, 77, 236);
     border-radius: 40px;
     border: none;
     box-sizing: border-box;
+  }
+
+  &__map-marker {
+    height: 15px;
+    width: 15px;
   }
 }
 
