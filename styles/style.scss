@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 $theme-color: rgb(107, 77, 236);
@@ -185,7 +185,7 @@ $theme-color: rgb(107, 77, 236);
   &__card {
     margin-bottom: 13px;
     height: 80px;
-    width: 250px;
+    width: 230px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -202,7 +202,6 @@ $theme-color: rgb(107, 77, 236);
 
 .card {
   &__img {
-    margin: 10px;
     height: 50px;
     width: 50px;
   }
