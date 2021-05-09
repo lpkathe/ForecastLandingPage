@@ -12,7 +12,7 @@ It was developed in HTML5, CSS3, SASS and vanilla JavaScript.
 4. [Github](https://github.com/)
 5. [Google Chrome](https://www.google.com/intl/es/chrome/)
 6. [Firefox](https://www.mozilla.org/es-ES/firefox/new/)
-7. [CSS Validator](https://jigsaw.w3.org/css-validator/validator)
+7. [CSS Validator](https://jigsaw.w3.org/css-validator/)
 8. [HTML Validator](https://validator.w3.org/)
 9. [Weather API](https://openweathermap.org/api)
 
